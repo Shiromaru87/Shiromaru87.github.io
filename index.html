@@ -4,18 +4,18 @@
   <title>Slide</title>
   <link rel="stylesheet" href="./lib/talkie.min.css">
   <link rel="stylesheet" href="./lib/talkie-default.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
 <!-- put your slides -->
 
-<template layout="cover" type="text/x-markdown">
+<template layout="cover" type="text/x-markdown" backface="image/test.JPG" backface-filter="blur(3px) brightness(.5)" class="style0">
 # Test
+
 </template>
 
-<template layout="title" invert type="text/x-markdown"
-          backface-filter="blur(3px) brightness(.5)">
+<template layout="title" invert type="text/x-markdown" backface-filter="blur(3px) brightness(.5)">
 ## Test2
 </template>
 
@@ -23,18 +23,17 @@
 ## AAAAA
 </template>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
 <script src="./lib/talkie.js"></script>
 <script>
 var talkie = Talkie({wide: false});
 talkie.next.plug(talkie.control.keydown('x'));
 talkie.prev.plug(talkie.control.keydown('z'));
+
 document.addEventListener('DOMContentLoaded', function() {
   var slides = Array.prototype.slice.call(document.querySelectorAll('[layout]'));
   talkie.changed.onValue(function(current) {
     console.clear();
-    // print presenter notes
-    console.info(talkie.notes[current.getAttribute('pageNo.')]);
+    // console.info(talkie.notes[current.getAttribute('pageNo.')]);
   });
 });
 </script>
