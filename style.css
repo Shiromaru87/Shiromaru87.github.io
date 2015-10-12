@@ -3,6 +3,12 @@
   height: 480px;
 }
 
+body{
+  font-family: Sans,Hiragino Kaku Gothic ProN,Meiryo,sans-serif !important;
+  font-weight: normal !important;
+}
+
+
 #control {
   color: rgb(170, 170, 60);
 }
