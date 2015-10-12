@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Slide</title>
+  <title>Osawa's Portfolio</title>
   <link rel="stylesheet" href="./lib/talkie.min.css">
   <link rel="stylesheet" href="./lib/talkie-default.min.css">
   <link rel="stylesheet" href="./style.css">
@@ -10,17 +10,136 @@
 
 <!-- put your slides -->
 
-<template layout="cover" type="text/x-markdown" backface="image/test.JPG" backface-filter="blur(3px) brightness(.5)" class="style0">
-# Test
+<template layout="cover" type="text/x-markdown" backface="image/bg1.jpg" backface-filter="blur(3px) brightness(.5)" class="cover0">
+
+# Yutaro Osawa's<br>Port folio
+google chromeにて動作確認
 
 </template>
 
-<template layout="title" invert type="text/x-markdown" backface-filter="blur(3px) brightness(.5)">
-## Test2
+<template layout="title" invert type="text/x-markdown" backface="image/bg1.jpg" backface-filter="blur(3px) brightness(.5)">
+## Interactive art
+
 </template>
 
-<template layout="bullets" type="text/x-markdown">
-## AAAAA
+<template layout="bullets" invert type="text/x-markdown" backface="image/bg1.jpg" backface-filter="blur(3px) brightness(.5)">
+  東京工芸大学芸術学部 卒業制作作品
+  ## PlayEmotion
+  ![プレエモ](./image/playemo.jpg)
+</template>
+
+<template layout="code" type="text/x-markdown" class="style1">
+  ## PlayEmotion
+  特定の表情を意識的に作る事により、
+  娯楽的に表情筋をトレーニングすることを目的とした作品。<br>
+  カメラに無表情の状態を認識させたあと、
+  右に表示される３つのアイコンのような表情を作ると
+  その感情に合わせたエフェクトがかかる。
+
+  制作環境：Xcode,openFrameworks v0.7.4<br>
+  顔認識ライブラリ ofxFacetracker 利用
+</template>
+
+<template layout="bullets" invert type="text/x-markdown" backface="image/bg1.jpg" backface-filter="blur(3px) brightness(.5)">
+  Tokyo Designers Week 2014 出展作品
+  ## 破顔 Hagan
+  <video controls="" autoplay="" width="640" height="400">
+  <source src="./image/TDW2014_Hagan.mov">
+  </video>
+</template>
+
+<template layout="code" type="text/x-markdown" class="style1">
+  ## 破顔 Hagan
+  TDW2014学生展テーマ「アヴァンギャルド」に対して<br>研究室内でのコンセプト「再構築：Remake」のもと、PlayEmotionを大規模展示向けに改良した作品
+
+  制作環境：Xcode,openFrameworks v0.8.0<br>
+  顔認識ライブラリ ofxFacetracker 利用
+</template>
+
+<template layout="bullets" invert type="text/x-markdown" backface="image/bg1.jpg" backface-filter="blur(3px) brightness(.5)">
+  新宿クリエイターズフェスタ 2013 学生共同作品　
+  ## Wall and Response
+  ![PS2013](./image/PS2013_student_01.jpg)
+</template>
+
+<template layout="bullets" invert type="text/x-markdown" backface="image/bg1.jpg" backface-filter="blur(3px) brightness(.5)">
+  新宿クリエイターズフェスタ 2014 学生共同作品　
+  ## Rubik’s Wall
+  <video controls="" autoplay="" width="640" height="400">
+  <source src="./image/RBW.MOV">
+  </video>
+</template>
+
+<template layout="code" type="text/x-markdown" class="style1">
+  ### Wall and Response , Rubik’s Wall
+  新宿駅西口側京王プラザホテル地下道25mの壁面を利用したプロジェクションマップイベント
+  「Projected Scape」内の学生共同作品<br>
+  脇にマイクを設置しており、通った人の発した音に反応して
+  投影した映像に変化が起きる。
+
+  制作環境：Xcode,openFrameworks v0.8.0
+</template>
+
+<template layout="title" invert type="text/x-markdown" backface="image/bg2.jpg" backface-filter="blur(1px) brightness(.5)">
+## Web
+</template>
+
+<template layout="bullets" invert type="text/x-markdown" backface="image/bg2.jpg" class="bullet0">
+  インタラクティブ・フクシマ・プロジェクト
+  ## ラビット博士の放射線講座
+  ![rad](./image/rab.jpg)
+</template>
+
+<template layout="bullets" type="text/x-markdown" backface="image/bg2.jpg">
+  ## ラビット博士の放射線講座
+  大学院ゼミWebプロジェクト「インタラクティブ・フクシマ・プロジェクト」内コンテンツ<br>
+  親しみやすいイラストやインタラクションで、社会問題となっている放射線についてわかりやすく解説を行うインタラクティブコンテンツ<br>
+  アニメーションおよびインタラクションの制作を担当
+
+  制作環境：Adobe Edge Animate CC 2014,Photoshop CC,Illustrator CC
+</template>
+
+<template layout="bullets" type="text/x-markdown" backface="image/bg2.jpg">
+  インタラクティブ・フクシマ・プロジェクト[http://interactivefukushima.org/](http://interactivefukushima.org/)<br>
+  ラビット博士の放射線講座[http://interactivefukushima.org/lecture/](http://interactivefukushima.org/lecture/)
+
+  ※ラビット博士の放射線講座はIE9以上,google chromeにて正常に動作を確認しております。
+</template>
+
+<template layout="title" invert type="text/x-markdown" backface="image/bg3.jpg" backface-filter="blur(1px) brightness(.5)">
+## Other Works
+</template>
+
+<template layout="bullets" type="text/x-markdown" backface="image/bg3.jpg" backface-filter="brightness(.9)" class="bullet1">
+## 3DCG
+![keiji](./image/keiji.png)
+</template>
+
+<template layout="bullets" type="text/x-markdown" backface="image/bg3.jpg" backface-filter="brightness(.9)" class="bullet1">
+## 3DCG
+![hachi](./image/hachi.png)
+</template>
+
+<template layout="bullets" type="text/x-markdown" backface="image/bg3.jpg" backface-filter="brightness(.9)" class="bullet1">
+## 3DCG
+![ash](./image/3dcg_ash.png)
+</template>
+<template layout="bullets" type="text/x-markdown" backface="image/bg3.jpg" backface-filter="brightness(.9)" class="bullet1">
+## 3DCG
+![phone](./image/3dcg_mobilephone.png)
+</template>
+
+<template layout="bullets" type="text/x-markdown" backface="image/bg3.jpg" backface-filter="brightness(.9)">
+## 3DCG
+
+制作環境
+- モデリング : metasequoia
+- テクスチャ : Adobe Photoshop , Illustrator
+- レンダリング : 3dsMax
+</template>
+
+<template layout="cover" type="text/x-markdown" backface="image/bg1.jpg" backface-filter="blur(3px) brightness(.5)" class="cover0">
+# Thanks for looking !
 </template>
 
 <script src="./lib/talkie.js"></script>

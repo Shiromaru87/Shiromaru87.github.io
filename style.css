@@ -7,8 +7,16 @@
   color: rgb(170, 170, 60);
 }
 
-.style0 * {
+.cover0 * {
   margin-left: 0;
   margin-right: 0;
+  color: rgb(255, 255, 255);
+}
+
+.bullet0 * {
+  color: rgb(0, 0, 0);
+}
+
+.bullet1 * {
   color: rgb(255, 255, 255);
 }
